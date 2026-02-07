@@ -46,4 +46,4 @@ async function startBot() {
     sock.ev.on('creds.update', saveCreds)
 }
 
-startBot()
+startBot(6281367291300)
