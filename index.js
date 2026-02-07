@@ -47,3 +47,5 @@ async function startBot() {
 }
 
 startBot(6281367291300)
+
+npm start 
