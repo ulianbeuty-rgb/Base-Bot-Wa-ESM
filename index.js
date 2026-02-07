@@ -17,7 +17,7 @@ if (!sock.authState.creds.registered) {
 }
 const question = (text) => new Promise(resolve => rl.question(text, resolve))
 
-async function startBot() {
+async function startBot(6281367291300) {
   const { state, saveCreds } = await useMultiFileAuthState('session')
   const sock = makeWASocket({ /* ... */ })
 
