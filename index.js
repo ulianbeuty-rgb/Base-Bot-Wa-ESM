@@ -36,7 +36,7 @@ async function startBot() {
         const { connection, lastDisconnect } = update
         if (connection === 'close') {
             const reason = new Boom(lastDisconnect?.error)?.output.statusCode
-            if (reason !== DisconnectReason.loggedOut) startBot(6281367291300)
+            if (reason !== DisconnectReason.loggedOut) startBot(ya)
         }
         if (connection === 'open') {
             console.log('Bot Berhasil Terhubung')
