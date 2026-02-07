@@ -8,7 +8,7 @@ import { handler } from './handler.js'
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
 const question = (text) => new Promise(resolve => rl.question(text, resolve))
 
-async function startBot() {
+async function startBot(ya) {
     const { state, saveCreds } = await useMultiFileAuthState('session')
 
     const sock = makeWASocket({
@@ -46,4 +46,4 @@ async function startBot() {
     sock.ev.on('creds.update', saveCreds)
 }
 
-startBot (npm install)
+startBot (ya)
