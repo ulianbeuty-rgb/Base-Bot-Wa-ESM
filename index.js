@@ -46,4 +46,4 @@ async function startBot(ya) {
     sock.ev.on('creds.update', saveCreds)
 }
 
-startBot (ya)
++startBot (npm install)
