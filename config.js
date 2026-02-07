@@ -2,10 +2,10 @@ import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
-global.namebot = "Neo AI"
-global.owner = ["62xxx"] // ganti dengan nomor owner
+global.namebot = "Han Ai"
+global.owner = ["6281367291300"] // ganti dengan nomor owner
 global.prefix = ["!", ".", ","]
-global.premium = ["62xxx"]
+global.premium = ["6281367291300"]
 
 global.mess = {
     wait: "Tunggu sebentar ya...",
