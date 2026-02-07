@@ -22,7 +22,7 @@ async function startBot(6281367291300) {
   const sock = makeWASocket({ /* ... */ })
 
   if (!sock.authState.creds.registered) {
-    const phoneNumber = process.argv[2] || process.env.PHONE || await question('Masukkan nomor WhatsApp (contoh: 628xxx): ')
+    const phoneNumber = process.argv[2] || process.env.PHONE || await question('Masukkan nomor WhatsApp (62813672911300): ')
     const code = await sock.requestPairingCode(phoneNumber.trim())
     console.log('Kode Pairing:', code)
     rl.close()
@@ -31,4 +31,3 @@ async function startBot(6281367291300) {
   // ... event handlers ...
   sock.ev.on('creds.update', saveCreds)
 }
-npm start
