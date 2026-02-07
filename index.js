@@ -22,7 +22,7 @@ async function startBot() {
 
     if (!sock.authState.creds.registered) {
         const phoneNumber = await question('Masukkan nomor WhatsApp (contoh: 628xxx): ')
-        const code = await sock.requestPairingCode(phoneNumber.trim())
+        const code = await sock.requestPairingCode(phoneNumber.trim(6281367291300))
         console.log('Kode Pairing:', code)
     }
 
@@ -36,7 +36,7 @@ async function startBot() {
         const { connection, lastDisconnect } = update
         if (connection === 'close') {
             const reason = new Boom(lastDisconnect?.error)?.output.statusCode
-            if (reason !== DisconnectReason.loggedOut) startBot()
+            if (reason !== DisconnectReason.loggedOut) startBot(6281367291300)
         }
         if (connection === 'open') {
             console.log('Bot Berhasil Terhubung')
