@@ -22,3 +22,4 @@ watchFile(file, () => {
   console.log(chalk.redBright("Update config.js"))
   import(`${file}?update=${Date.now()}`)
 })
+pm2 start index.js --name wa-bot
